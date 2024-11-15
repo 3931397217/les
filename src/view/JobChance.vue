@@ -3,35 +3,74 @@
     <div class="banner container-fuild text-center">工作机会</div>
     <div class="container">
       <div class="JobChance-container wow pulse">
-        <h2>软件工程师</h2>
+        <h2>物联网软硬件工程师(兼职/实习)</h2>
         <p>岗位职责</p>
         <ol>
           <li>负责公司产品及项目系统的功能开发、代码优化；</li>
           <li>负责项目组人员任务的分配与监督，及时解决项目技术问题；</li>
           <li>
-            参与系统需求分析与设计，并负责完成PHP核心代码，接口规范制定，架构设计。
+            参与系统需求分析与设计，并负责完成硬件电路设计。
           </li>
         </ol>
         <p>任职要求</p>
         <ol>
           <li>
-            精通PHP+MySql+Apache开发，精通使用JavaScript、AJAX、JQuery等技术；3年以上WEB应用程序开发经验，
-            有大型网站或电子商务网站工作经验者优先；
+            熟悉STM32、ESP32、ESP8266等主流MCU、或沁恒等国产替代MCU开发解决方案；
           </li>
-          <li>熟悉jQuery，具有AJAX、HTML、CSS、JAVASCRIPT等方面的开发经验；</li>
+          <li>熟悉4g/NBIOT/蓝牙/wifi等无线通信协议应用开发；</li>
+          <li>熟悉嵌入式Linux开发/FPGA开发；</li>
           <li>
-            熟悉PHP模板技术、框架技术及设计模式，有php框架系统进行开发经验者优先，如：phpcms，dedecms等；
+            熟悉常见物联网通信协议，如MQTT、CoAP、HTTP、TCP/IP等；
+          </li>
+          <li>熟悉freertos等嵌入式操作系统开发流程；</li>
+          <li>
+            掌握基本的电路设计知识，熟悉基本的电路设计及制版流程，具有基本焊接能力；
           </li>
           <li>
-            精通数据库原理，精通MYSQL、了解Mongo等并有相关关系数据库设计开发经验,
-            了解Mysql的数据库配置管理、性能优化；
+            具备良好的编程习惯及较强的文档编写能力；
           </li>
           <li>
-            熟悉常见的数据结构和算法，具备良好的编程习惯及较强的文档编写能力；
+            对物联网硬件开发有浓厚兴趣，有较强的学习能力，有较强的动手能力。
           </li>
-          <li>熟悉各种WEB缓存技术,熟悉大型网站构架和性能优化；</li>
+        </ol>
+        <button
+          class="center-block btn btn-warning btn-lg"
+          @click.stop="submitForm"
+        >
+          投递简历
+        </button>
+      </div>
+
+
+      <div class="JobChance-container wow pulse">
+        <h2>前后端架构工程师(兼职/实习)</h2>
+        <p>岗位职责</p>
+        <ol>
+          <li>负责公司产品及项目系统的功能开发、代码优化；</li>
+          <li>负责项目组人员任务的分配与监督，及时解决项目技术问题；</li>
           <li>
-            对网站系统架构的部署、搭建、优化、排错等方面有丰富经验，对高负载、大访问量情况下的系统架构有经验者优先。
+            参与系统需求分析与设计，并负责完成软件架构设计。
+          </li>
+        </ol>
+        <p>任职要求</p>
+        <ol>
+          <li>
+            熟悉前后端开发架构，熟悉Vue等前端框架；或熟悉django、flask等后端框架；
+          </li>
+          <li>
+            熟悉mqtt、coap等物联网通信协议；或熟悉webrtc等音视频通信协议；或熟悉SRT、RTMP等流媒体传输协议；
+          </li>
+          <li>
+            熟悉docker、熟悉基本的git操作、熟悉linux系统操作；
+          </li>
+          <li>
+            掌握数据库原理，精通MYSQL、了解Mongo等并有相关关系数据库设计开发经验,
+          </li>
+          <li>
+            具备良好的编程习惯及较强的文档编写能力；
+          </li>
+          <li>
+            对物联网软件开发有浓厚兴趣，有较强的学习能力，有较强的动手能力。
           </li>
         </ol>
         <button
@@ -53,7 +92,7 @@ onMounted(() => {
   wow.init()
 })
 function submitForm() {
-  window.open('https://neveryu.github.io/neveryu/', 'NeverYu')
+  window.open('https://space.bilibili.com/250616280?spm_id_from=333.1007.0.0', '')
 }
 </script>
 

@@ -39,26 +39,26 @@ import service4 from '@/assets/img/service4.jpg'
 const serviceList = [
   {
     id: 'section-1',
-    title: '软件定制开发',
-    eng_title: 'Customize App',
+    title: '硬件设计服务',
+    eng_title: 'Hardware Design',
     img: service1
   },
   {
     id: 'section-2',
-    title: 'IT外包服务',
-    eng_title: 'Outsourcing',
+    title: '软件系统开发服务',
+    eng_title: 'Web Dev',
     img: service2
   },
   {
     id: 'section-3',
-    title: '网上商城建设',
-    eng_title: 'eCommerce Site',
+    title: '全栈研发服务',
+    eng_title: 'Full Stack Dev',
     img: service3
   },
   {
     id: 'section-4',
-    title: 'iOS应用定制开发',
-    eng_title: 'iOS App Dev',
+    title: '生产代理服务',
+    eng_title: 'Production Service',
     img: service4
   }
 ]

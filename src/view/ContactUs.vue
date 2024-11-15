@@ -100,7 +100,7 @@ onMounted(() => {
 })
 function submitForm() {
   window.open(
-    'https://neveryu.github.io/web-bookmarks/interview/',
+    'https://space.bilibili.com/250616280?spm_id_from=333.1007.0.0',
     'web-bookmarks'
   )
 }

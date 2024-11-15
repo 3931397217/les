@@ -6,17 +6,16 @@
       <div class="container">
         <div class="server pull-left">
           <span class="glyphicon glyphicon-earphone"></span>{{ phone }}
-          <span class="glyphicon glyphicon-envelope"></span>{{ email }}
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+          <span class="glyphicon glyphicon-user"></span>微信:{{ wechat }}
+          <span class="glyphicon glyphicon-time"></span>物联网全栈研发专业团队为您服务
         </div>
         <div class="shejiao pull-right">
-          <span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
-          <span class="glyphicon glyphicon-hand-left"></span>
+          <!--<span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
+          <span class="glyphicon glyphicon-hand-left"></span>-->
 
           <a
-            href="https://github.com/neveryu"
+            href="https://github.com/ywz978020607/heyujisuan"
             target="_blank"
-            style="color: #fc5531; font-size: 18px; cursor: pointer"
             >Github</a
           >
         </div>
@@ -96,7 +95,7 @@
 <script setup>
 import { ref, reactive } from 'vue'
 const phone = import.meta.env.VITE_APP_PHONE
-const email = import.meta.env.VITE_APP_EMAIL
+const wechat = import.meta.env.VITE_APP_Wechat
 const navIndex = ref('')
 navIndex.value = sessionStorage.getItem('navIndex')
   ? sessionStorage.getItem('navIndex')
@@ -110,16 +109,32 @@ const navList = [
     children: []
   },
   {
-    name: '软件产品',
+    name: '自研产品',
     path: '/software',
     children: [
       {
-        name: '智能小镇管理系统',
-        path: '/software/smartTown'
+        path: '/software/mgps',
+        name: '迷你低功耗定位'
       },
       {
-        name: '大数据管理系统',
-        path: '/software/bigData'
+        path: '/software/mini4gcam',
+        name: '迷你记录仪/图传'
+      },
+      {
+        path: '/software/bioadc',
+        name: '脑/肌电采集解决方案'
+      },
+      {
+        path: '/software/industrial',
+        name: '低功耗工业物联网方案'
+      },
+      {
+        path: '/software/heyusth',
+        name: '有意思的模块'
+      },
+      {
+        path: '/software/mgps',
+        name: '网站更新不及时，更多产品请关注B站/淘宝店铺'
       }
     ]
   },
@@ -128,11 +143,11 @@ const navList = [
     path: '/service',
     children: []
   },
-  {
-    name: '新闻动态',
-    path: '/newsinformation',
-    children: []
-  },
+  //{
+  //  name: '新闻动态',
+  //  path: '/newsinformation',
+  //  children: []
+  //},
   {
     name: '公司介绍',
     path: '/companyintroduction',

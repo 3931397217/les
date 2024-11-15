@@ -3,17 +3,17 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图" />
     </div>
-    <p class="title">公司企业网站模板</p>
+    <p class="title">{{ company }}</p>
     <p class="address_tel_fax">
       <p>地址：{{ address }}</p>
-      <p>QQ群：<a style="color:#fff" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=ce9f5f0d1d7553fb5634521f79a89668ad0d798eb35047f93300df63ebae4c05">{{ qqgroup }}</a></p>
+      <p>微信号：{{ wechat }}</p>
     </p>
     <p class="email_wx">
-      <p>博客：<a :href='blog + "neveryu/"' style="color:#fff">{{ blog }}</a></p>
+      <p>自媒体B站：<a :href='blog' style="color:#fff">{{ blogName }}</a></p>
+      <p>淘宝店铺：<a :href='etbSite' style="color:#fff">{{ etb }}</a></p>
       <p>邮箱：{{ email }}</p>
-      <p>公司QQ号：{{ qq }}</p>
     </p>
-    <p class="copy">Copyright &copy; 2018 - Now {{ company }}</p>
+    <p class="copy">Copyright &copy; {{ company }}</p>
   </div>
 </template>
 
@@ -21,10 +21,12 @@
 const address = import.meta.env.VITE_APP_ADDRESS
 const phone = import.meta.env.VITE_APP_PHONE
 const email = import.meta.env.VITE_APP_EMAIL
-const qq = import.meta.env.VITE_APP_QQ
 const company = import.meta.env.VITE_APP_COMPANYNAME
 const blog = import.meta.env.VITE_APP_BLOG
-const qqgroup = import.meta.env.VITE_APP_QQGROUP
+const blogName = import.meta.env.VITE_APP_BLOG_NAME
+const etbSite = import.meta.env.VITE_ETB_SITE
+const etb = import.meta.env.VITE_ETB
+const wechat = import.meta.env.VITE_APP_Wechat
 </script>
 
 <style scoped>

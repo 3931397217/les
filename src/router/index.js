@@ -31,25 +31,49 @@ const routes = [
         path: '/software',
         name: 'software',
         component: () => import('@/view/Software.vue'),
-        redirect: '/software/smartTown',
+        redirect: '/software/mgps',
         meta: {
-          title: '软件产品'
+          title: '自研产品'
         },
         children: [
           {
-            path: '/software/smartTown',
-            name: 'smartTown',
-            component: () => import('@/view/Software_smartTown.vue'),
+            path: '/software/mgps',
+            name: 'mgps',
+            component: () => import('@/view/Software_mgps.vue'),
             meta: {
-              title: '软件产品丨智能小镇管理系统'
+              title: '自研产品丨迷你低功耗定位'
             }
           },
           {
-            path: '/software/bigData',
-            name: 'bigData',
-            component: () => import('@/view/Software_bigData.vue'),
+            path: '/software/mini4gcam',
+            name: 'mini4gcam',
+            component: () => import('@/view/Software_mini4gcam.vue'),
             meta: {
-              title: '软件产品丨大数据管理系统'
+              title: '自研产品丨迷你记录仪/图传'
+            }
+          },
+          {
+            path: '/software/bioadc',
+            name: 'bioadc',
+            component: () => import('@/view/Software_bioadc.vue'),
+            meta: {
+              title: '自研产品丨脑/肌电采集解决方案'
+            }
+          },
+          {
+            path: '/software/heyusth',
+            name: 'heyusth',
+            component: () => import('@/view/Software_heyusth.vue'),
+            meta: {
+              title: '自研产品丨有意思的模块'
+            }
+          },
+          {
+            path: '/software/industrial',
+            name: 'industrial',
+            component: () => import('@/view/Software_industrial.vue'),
+            meta: {
+              title: '自研产品丨低功耗工业物联网方案'
             }
           }
         ]
@@ -96,14 +120,14 @@ const routes = [
           title: '工作机会'
         }
       },
-      {
-        path: '/contactus',
-        name: 'contactUs',
-        component: () => import('@/view/ContactUs.vue'),
-        meta: {
-          title: '联系我们'
-        }
-      }
+      // {
+      //   path: '/contactus',
+      //   name: 'contactUs',
+      //   component: () => import('@/view/ContactUs.vue'),
+      //   meta: {
+      //     title: '联系我们'
+      //   }
+      // }
     ]
   }
 ]

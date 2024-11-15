@@ -28,59 +28,10 @@
       </swiper-slide>
     </swiper>
 
-    <!-- 大数据管理系统 -->
-    <div id="bigData" class="container-fuild">
-      <div class="row bigData-container">
-        <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img
-            class="img-responsive"
-            src="@/assets/img/img1.png"
-            alt="大数据管理系统"
-          />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <h2 class="bigData-title">
-            大数据管理系统
-            <small>/ Big Data Management System</small>
-          </h2>
-          <p>
-            当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。
-          </p>
-          <p>
-            我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。
-          </p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <a href="javascript:;" class="btn btn-lg btn-block btn-info"
-            >联系我们</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <!-- 您身边的IT专家 -->
-    <div id="contactUs" class="container-fuild text-center">
-      <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的IT专家</h1>
-        <h3>7x24小时提供出色的IT服务</h3>
-        <button
-          class="btn btn-default btn-sm"
-          onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
-          onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
-        >
-          联系我们
-        </button>
-        <div class="contactUs-contactWay">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 客户评价 -->
+    <!-- 部分产品项目展示 -->
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
+        <p class="customer-title text-center">部分产品项目展示</p>
         <swiper
           class="swiper-container customer-swiper hidden-xs"
           :modules="modules"
@@ -134,12 +85,12 @@
       </div>
     </div>
 
-    <!-- 为什么选择我们 -->
+    <!-- 我们的优势 -->
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
-          <p>THE REASON TO CHOOSING US</p>
+          <p>我们的优势</p>
+          <p>OUR STRENGTHS</p>
         </div>
         <div class="row">
           <div
@@ -184,147 +135,93 @@ import 'swiper/css/autoplay'
 import banner1 from '@/assets/img/banner1.png'
 import banner2 from '@/assets/img/banner2.jpg'
 
-import logo_hp from '@/assets/img/logo_hp.png'
-import logo_kk from '@/assets/img/logo_kk.png'
-import logo_toyota from '@/assets/img/logo_toyota.png'
-
 import img_tel from '@/assets/img/tel.png'
 import img_computer from '@/assets/img/computer.png'
 import img_qq from '@/assets/img/qq.png'
 import img_skill from '@/assets/img/skill.png'
 
+
+import logo_mgps from '@/assets/img/mgps/taobao.png'
+import logo_heyusth_blerock from '@/assets/img/heyusth/blerock.png'
+import logo_heyusth_usbaio from '@/assets/img/heyusth/usbaio.png'
+import logo_mini4gcam from '@/assets/img/4gcam/s3cam780.png'
+import logo_bioadc from '@/assets/img/bioadc/bioadc.png'
+
 const swiperList = [
   {
     img: banner1,
-    title: '您身边的IT专家1',
-    content: '宣传简介您身边的IT专家1宣传简介您身边的IT专家1'
+    title: '一线大厂工程师团队专注服务，您的物联网软硬件系统研发团队',
+    content: '团队成员均来自一线大厂，拥有多年的一线实战经验，满足不同客户开发服务需求'
   },
   {
     img: banner2,
-    title: '您身边的IT专家2',
-    content: '宣传简介您身边的IT专家2宣传简介您身边的IT专家2'
+    title: '倾注心血的赛博手作，给您最优性价比的软硬件产品，并满足您的定制化需求',
+    content: '基于客户需求和反馈不断迭代，形成若干创新型自研产品，同时标准化及定制化售卖'
   },
-  {
-    img: banner1,
-    title: '您身边的IT专家3',
-    content: '宣传简介您身边的IT专家3宣传简介您身边的IT专家3'
-  },
-  {
-    img: banner2,
-    title: '您身边的IT专家4',
-    content: '宣传简介您身边的IT专家4宣传简介您身边的IT专家4'
-  }
 ]
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, Lazy, Autoplay]
 
 const customerList = [
   {
-    logo: logo_hp,
+    logo: logo_mgps,
     title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
+      '迷你低功耗定位器',
     content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
+      '超低功耗合宙Air780EG 4g+gps定位板 3uA级 支持蜂鸣器/加速度计，详细信息见产品资料'
   },
   {
-    logo: logo_kk,
+    logo: logo_heyusth_blerock,
     title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
+      '迷你双摇杆蓝牙键鼠/手柄',
     content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
+      '支持蓝牙5.0，支持所有蓝牙鼠标可支持的系统，全鼠标功能，小红点++，手柄模式开源'
   },
   {
-    logo: logo_toyota,
+    logo: logo_mini4gcam,
     title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
+      '4g+摄像头低功耗推流 - DIY-IPC方案',
     content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
+      '多种方案，支持低功耗300uA联网待机远程开关&udp推流，详细信息见产品资料'
   },
   {
-    logo: logo_kk,
+    logo: logo_heyusth_usbaio,
     title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
+      '程控扩展坞',
     content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
+      '支持每路电源可单独控制的扩展坞，方便调试和重启，避免手动插拔，详细信息见产品资料'
   },
   {
-    logo: logo_hp,
+    logo: logo_bioadc,
     title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
+      '脑/肌电采集解决方案',
     content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
+      '自研方案实现了生物电采集、传输以及频谱分析，确保设备的高精度和低成本，详细信息见产品资料'
   },
-  {
-    logo: logo_toyota,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_toyota,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  }
+
+  
 ]
 
 const serverList = [
   {
-    logo: img_tel,
-    title: '核心优势1',
-    content: '<p>由专业客服提供人工服务</p>负责疑难问题和故障受理'
+    logo: img_skill,
+    title: '技术优势',
+    content: '专业核心工程师团队，提供专业的硬件设计服务、嵌入式及软件开发服务，支持规模生产一条龙服务'
   },
   {
     logo: img_computer,
-    title: '核心优势2',
-    content: '<p>利用远程视频工具，提供协助</p>帮助客户进行调试、解决故障'
+    title: '产品优势',
+    content: '通过多年的技术积累，形成若干创新型产品，为客户选型提供实际的过往案例参考'
+  },
+  {
+    logo: img_tel,
+    title: '服务优势',
+    content: '工程师直接沟通，省去中间环节，快速响应客户需求，提供最本质的服务'
   },
   {
     logo: img_qq,
-    title: '核心优势3',
-    content: '<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障'
-  },
-  {
-    logo: img_skill,
-    title: '核心优势4',
-    content: '<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理'
+    title: '团队优势',
+    content: '自研部分，工程师+客户按产品拉群，根据客户的反馈，不断迭代产品，提供最优质的服务'
   }
 ]
 

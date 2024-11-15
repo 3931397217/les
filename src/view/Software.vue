@@ -3,7 +3,7 @@
     <div class="row">
       <div id="left" class="col-md-4 col-xs-12">
         <ul class="left-container wow bounceInLeft">
-          <p>软件产品</p>
+          <p>自研产品</p>
           <li v-for="(item, index) in softwareList" :key="index">
             <router-link :to="item.path">{{ item.name }}</router-link>
           </li>
@@ -22,14 +22,27 @@ import { onMounted } from 'vue'
 
 const softwareList = [
   {
-    path: '/software/smartTown',
-    name: '智能小镇管理系统'
+    path: '/software/mgps',
+    name: '迷你低功耗定位'
   },
   {
-    path: '/software/bigData',
-    name: '大数据管理系统'
+    path: '/software/mini4gcam',
+    name: '迷你记录仪/图传'
+  },
+  {
+    path: '/software/bioadc',
+    name: '脑/肌电采集解决方案'
+  },
+  {
+    path: '/software/heyusth',
+    name: '有意思的模块'
+  },
+  {
+    path: '/software/industrial',
+    name: '低功耗工业物联网方案'
   }
 ]
+
 onMounted(() => {
   // var wow = new WOW()
   // wow.init()
