@@ -5,7 +5,7 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>{{ phone }}
+          <!-- <span class="glyphicon glyphicon-earphone"></span>{{ phone }} -->
           <span class="glyphicon glyphicon-user"></span>微信:{{ wechat }}
           <span class="glyphicon glyphicon-time"></span>物联网全栈研发专业团队为您服务
         </div>
