@@ -80,7 +80,7 @@ const serviceContentList = [
     eng_title: 'Web Dev',
     content:
       '<h3>Web架构设计</h3><p>提供专业前后端架构设计开发服务，包括serverless、docker化部署、微服务、vue等前端框架开发、django后端开发。</p>\
-      <h3>推荐架构设计</h3><p>提供专业推荐后端架构设计开发服务，包括产品方案选型、表结构设计、数据流设计等。</p>'
+      <h3>推荐架构设计</h3><p>xxcfvsdafewawefwqaedg</p>'
   },
   {
     id: 'section-3',
